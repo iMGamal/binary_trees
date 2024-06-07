@@ -2,27 +2,24 @@
 #include <stdlib.h>
 #include "binary_trees.h"
 
-/*
- *
+/**
+ * binary_tree_node - Creates a new node
+ * @parent: Pointer to the parent node
+ * @value: Value to be assigned to new node
+ * Return: Pointer to new node or NULL on failure
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	struct node
-	{
-		int x;
-		struct node *parent;
-		struct node *left;
-		struct node *right;
-	};
+	binary_tree_t *new;
 
-	parent = (struct node *)malloc(sizeof(struct node));
-	if (node == NULL)
+	new = (binary_tree_t *)malloc(sizeof(binary_tree_t));
+	if (new == NULL)
 	{
+		printf("Memory allocation failed\n");
 		return (NULL);
 	}
-	node->x = value;
-	node->parent = parent;
-	node->left = NULL;
-	node->right = NULL;
-	return (parent);
+	new->parent = parent;
+	new->left = NULL;
+	new->right = NULL;
+	return (new);
 }
