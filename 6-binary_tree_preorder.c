@@ -3,7 +3,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_preorder - Prints element of tree 
+ * binary_tree_preorder - Prints element tree 
  * @tree: Pointer to the tree
  * @func: Pointer to function for node
  */
